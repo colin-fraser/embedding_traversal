@@ -139,8 +139,14 @@ viz <- essays |>
   pull(html)
 
 #' Below are the essays with each word colored and weighted by the distance
-#' that it traverses in the embedding space.
+#' that it traverses in the embedding space. Sadly colors don't render in github markdown so you'll
+#' have to click the links.
+#' 
+#' - [ChatGPT Essay](https://htmlpreview.github.io/?https://github.com/colin-fraser/embedding_traversal/blob/main/chatgpt.html)
+#' - [Human Essay](https://htmlpreview.github.io/?https://github.com/colin-fraser/embedding_traversal/blob/main/human.html)
 
-htmltools::HTML(viz[1])
-htmltools::HTML(viz[2])
+viz[1] |> 
+  write_file("chatgpt.html")
+viz[2] |> 
+  write_file("human.html")
 
