@@ -1,6 +1,7 @@
 #' ---
 #' title: "Exploring embedding space traversal"
 #' author: "Colin Fraser"
+#' output: github_document
 #' ---
 #' 
 #' Note `{openaiwrapper}` is written by me and not on CRAN. It's installable with
